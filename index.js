@@ -1,4 +1,5 @@
 "use strict";
+
 let numberOfFilms;
 
 const personalMovieDb = {
@@ -63,3 +64,16 @@ function writeYourGenres() {
 }
 
 writeYourGenres();
+
+
+const soldier = {
+    health: '100',
+    armor: '200',
+    action: function() {
+        console.log('Открываю огонь');
+    }
+};
+
+const john = Object.create(soldier);
+
+john.action();
